@@ -1,0 +1,89 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+
+    .customers-list__item{
+        flex-basis: calc((100% - 30px) / 2);
+        }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .customers-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers-section {
+        padding-top: 94px;
+        padding-bottom: 47px;
+    }
+
+    .customers-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        }
+}
+
+.customers-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-customers__title {
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.customers-list__item {
+    transition: fill var(--transition-dur-and-func),
+        border-color var(--transition-dur-and-func);
+}
+
+.customers-list__icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+
+    .customers-list__link:hover &,
+    .customers-list__link:focus &{
+         fill: var(--accent-color);
+         border-color: var(--accent-color);
+        }
+
+}
+
+.customers-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    background: var(--fond-color);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        border-color: var(--accent-color);
+        }
+}
+
+// ВИРІВНЯТИ ЛІШКИ ПО ЦЕНТРУ, Є ЛИШНІЙ НЕ ВІДОМИЙ МАРДЖІН??

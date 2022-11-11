@@ -1,0 +1,189 @@
+.page-footer {
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-fond-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-description {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer-container {
+    margin-right: 70px;
+}
+
+.address-footer {
+    margin-top: 20px;
+}
+
+.page-footer .wrap {
+    color: var(--fond-color);
+}
+
+.address {
+    color: var(--fond-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.address-nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+}
+
+.address-mail,
+.address-tel {
+    color: var(--contacts-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.address-nav .adress-nav__link {
+    transition: color var(--transition-dur-and-func);
+}
+
+.address-nav .adress-nav__link:hover,
+.address-nav .adress-nav__link:focus {
+    color: var(--accent-color);
+}
+
+/* Приєднуйтесь та іконки */
+.footer-sociale-list__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--fond-color);
+}
+
+.footer-sociale-list {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-sociale-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        }
+}
+
+.footer-sociale-list__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--fond-color);
+
+    transition: fill var(--transition-dur-and-func);
+
+    .footer-sociale-list__link:hover &,
+    .footer-sociale-list__link:focus & {
+        fill: var(--fond-color);
+        }
+}
+
+/* FOOTER SUBSCRIBE РОЗСИЛКА В ФУТЕРІ */
+.footer-subscribe {
+    width: 520px;
+    margin-left: 92px;
+}
+
+.footer-form__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fond-color);
+}
+
+.footer-form {
+    display: flex;
+    align-self: center;
+}
+
+.footer-form__input {
+    width: 358px;
+    padding: 15px 16px;
+    color: var(--fond-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+
+    transition: border-color var(--transition-dur-and-func);
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.25;
+        color: rgba(255, 255, 255, 0.6);
+        }
+
+    &:focus {
+         border-color: var(--accent-color);
+        }
+}
+
+.form-footer__icon {
+    position: absolute;
+    bottom: 50%;
+    right: 28px;
+    transform: translateY(10px);
+    fill: var(--fond-color);
+}
+
+.footer-form__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 8px 28px;
+    margin-left: 12px;
+    min-width: 200px;
+
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    color: #FFFFFF;
+
+    transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        }
+}
