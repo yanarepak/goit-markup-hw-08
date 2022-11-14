@@ -862,7 +862,7 @@ img {
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-1200@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero-768@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1196,7 +1196,7 @@ img {
 @media screen and (min-width: 1200px) {
   .customers-section {
     padding-top: 94px;
-    padding-bottom: 47px;
+    padding-bottom: 94px;
   }
   .customers-list {
     display: flex;
@@ -1248,7 +1248,7 @@ img {
 .address-nav {
   display: flex;
   flex-direction: column;
-  row-gap: 9px;
+  gap: 9px;
 }
 
 .address-mail,
@@ -1273,7 +1273,6 @@ img {
 
 /* Приєднуйтесь та іконки */
 .footer-sociale-group {
-  align-self: center;
   margin-bottom: 60px;
 }
 
@@ -1320,10 +1319,6 @@ img {
 }
 
 /* FOOTER SUBSCRIBE РОЗСИЛКА В ФУТЕРІ */
-.footer-subscribe {
-  width: 450px;
-}
-
 .footer-form__title {
   text-align: center;
   margin-bottom: 20px;
@@ -1336,7 +1331,7 @@ img {
 }
 
 .footer-form__input {
-  width: 450px;
+  width: 100%;
   padding: 15px 16px;
   margin-bottom: 20px;
   color: var(--fond-color);
@@ -1408,11 +1403,18 @@ img {
     justify-content: space-around;
     margin-bottom: 60px;
   }
-  .footer-subscribe {
-    margin: 0 auto;
+  .footer-sociale-group {
+    margin-bottom: 0;
   }
   .page-footer-container {
     margin-bottom: 0px;
+  }
+  .footer-form {
+    display: block;
+    text-align: center;
+  }
+  .footer-form__input {
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1422,6 +1424,10 @@ img {
   }
   .footer-wrapper {
     display: flex;
+    align-items: baseline;
+  }
+  .footer-sociale-group {
+    margin-bottom: 0;
   }
   .footer-subscribe {
     width: 520px;
@@ -1431,9 +1437,6 @@ img {
     display: flex;
     align-self: center;
   }
-  .footer-form__input {
-    margin-bottom: 0;
-  }
   .page-footer-container {
     text-align: left;
     margin-right: 70px;
@@ -1442,6 +1445,7 @@ img {
   .footer-form__input {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
   .footer-form__title {
     text-align: left;

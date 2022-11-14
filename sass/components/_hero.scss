@@ -78,7 +78,7 @@ screen and (min-resolution: 2dppx) and (max-width: 768px) {
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url('/images/hero-1200@2x.jpg');
+            url('/images/hero-768@2x.jpg');
     }
 }
 
