@@ -13,7 +13,6 @@
 }
 
 .page-footer-container {
-    align-self: center;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -197,25 +196,36 @@
 
 @media screen and (min-width: 768px) and (max-width:1199px){
     .page-footer-container{
-        text-align: unset;
+        text-align: left;
     }
 
     .footer-sociale-list__title {
-        text-align: unset;}
+        text-align: left;
+    }
 
     .footer-wrapper {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 60px;
     }
 
     .footer-subscribe{
         margin: 0 auto;
     }
 
+    .page-footer-container {
+        margin-bottom: 0px;
+
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .footer-description {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-wrapper{
         display: flex;
     }
 
@@ -234,11 +244,17 @@
     }
 
     .page-footer-container {
+        text-align: left;
         margin-right: 70px;
         margin-bottom: 0;
     }
 
     .footer-form__input {
         width: 358px;
+        margin-right:  12px;
+    }
+
+    .footer-form__title {
+        text-align: left;
     }
 }
