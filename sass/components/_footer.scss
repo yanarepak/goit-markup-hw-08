@@ -1,3 +1,5 @@
+
+
 .page-footer {
     letter-spacing: 0.03em;
     background-color: var(--secondary-fond-color);
@@ -5,13 +7,15 @@
     padding-bottom: 60px;
 }
 
-.footer-description {
-    display: flex;
-    align-items: baseline;
+
+.footer-logo{
+    margin-right:0;
 }
 
 .page-footer-container {
-    margin-right: 70px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .address-footer {
@@ -60,7 +64,13 @@
 }
 
 /* Приєднуйтесь та іконки */
+.footer-sociale-group{
+    align-self: center;
+    margin-bottom: 60px;
+}
+
 .footer-sociale-list__title {
+    text-align: center;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -75,6 +85,7 @@
 .footer-sociale-list {
     display: flex;
     column-gap: 10px;
+    justify-content: center;
 }
 
 .footer-sociale-list__link {
@@ -110,11 +121,11 @@
 
 /* FOOTER SUBSCRIBE РОЗСИЛКА В ФУТЕРІ */
 .footer-subscribe {
-    width: 520px;
-    margin-left: 92px;
+    width: 450px;
 }
 
 .footer-form__title {
+    text-align: center;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -125,14 +136,10 @@
     color: var(--fond-color);
 }
 
-.footer-form {
-    display: flex;
-    align-self: center;
-}
-
 .footer-form__input {
-    width: 358px;
+    width: 450px;
     padding: 15px 16px;
+    margin-bottom: 20px;
     color: var(--fond-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -161,12 +168,12 @@
 }
 
 .footer-form__btn {
+    margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
     text-align: center;
     padding: 8px 28px;
-    margin-left: 12px;
     min-width: 200px;
 
     font-weight: 700;
@@ -186,4 +193,52 @@
     &:focus {
         background-color: #188CE8;
         }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px){
+    .page-footer-container{
+        text-align: unset;
+    }
+
+    .footer-sociale-list__title {
+        text-align: unset;}
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-subscribe{
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-description {
+        display: flex;
+    }
+
+    .footer-subscribe {
+        width: 520px;
+        margin-left: 92px;
+    }
+
+    .footer-form {
+        display: flex;
+        align-self: center;
+    }
+
+    .footer-form__input {
+        margin-bottom: 0;
+    }
+
+    .page-footer-container {
+        margin-right: 70px;
+        margin-bottom: 0;
+    }
+
+    .footer-form__input {
+        width: 358px;
+    }
 }

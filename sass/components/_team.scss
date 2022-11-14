@@ -5,7 +5,7 @@
 }
 
 .section-team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: var(--title-text-color);
     font-size: 28px;
@@ -15,7 +15,7 @@
 }
 
 .team-list {
-    display: block; 
+    display: block;
 }
 
 .team-list__item {
@@ -62,7 +62,7 @@
     .sociale-list__link:hover &,
     .sociale-list__link:focus & {
         fill: var(--fond-color)
-        }
+    }
 }
 
 .sociale-list__link {
@@ -77,37 +77,34 @@
     background-color: var(--fond-color);
 
     transition: background-color var(--transition-dur-and-func);
-    
+
     &:hover,
     &:focus {
-         background-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .team-list__item:not(:last-child) {
+            margin-bottom: 30px;
         }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .team-list__item:not(:last-child){
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
     .section-team {
-        padding-top: 60px;
-        padding-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
-
-    .team-list{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+        
+    .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
     }
-
-    .team-list__item{
-        flex-basis: calc((100% - 30px) /2);
+        
+    .team-list__item {
+    flex-basis: calc((100% - 30px) /2);
     }
-
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -120,17 +117,16 @@
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
-        }
+    }
 
     .team-list__item {
         flex-basis: calc((100% - 3 * 30px) / 4);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
-        }
-    .team-list__item {
-        flex-basis: calc((100% - 3 * 30px) / 4);
     }
+
     .section-team__title{
         font-size: 36px;
+        margin-bottom: 50px;
     }
 }

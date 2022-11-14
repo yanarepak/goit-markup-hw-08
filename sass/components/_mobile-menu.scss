@@ -1,0 +1,128 @@
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+    height: 100vh;
+    
+    transform: translateX(100%);
+    background-color: #FFFFFF;
+
+    padding-left: 40px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    transition: transform var(--transition-dur-and-func);
+}
+
+.mobile-menu__close-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    transition: translate var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+    }
+}
+
+.is-open{
+    transform: translate(0);
+}
+
+.mobile-menu__link{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    transition: color var(--transition-dur-and-func);
+
+        &:hover,
+        &:focus{
+        color: var(--accent-color); 
+        }
+}
+
+.mobile-menu__item:not(:last-child){
+    margin-bottom: 32px;
+}
+
+.mobile-menu__contact-link--tell{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.76;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.mobile-menu__contact-link--mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-menu__contacts-nav{
+    margin-bottom: 64px;
+}
+
+.sociale-site__list{
+    display: flex;
+    column-gap: 10px;
+}
+.sociale-site__item{
+    display: flex;
+    flex-direction: row;
+
+}
+.sociale-site__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
+    transition: color var(--transition-dur-and-func);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.sociale-site__line{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+

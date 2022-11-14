@@ -4,7 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: 450px;
     background-color: var(--fond-color);
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -36,4 +36,10 @@
 .modal__close-btn:hover .modal__close-btn-icon,
 .modal__close-btn:focus .modal__close-btn-icon {
     fill: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+    .modal{
+        width: 528px;
+    }
 }

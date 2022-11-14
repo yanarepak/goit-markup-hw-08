@@ -1,45 +1,16 @@
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .customers-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        }
-
-    .customers-list__item{
-        flex-basis: calc((100% - 30px) / 2);
-        }
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    .customers-list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
-        }
-}
-
-@media screen and (min-width: 1200px) {
-    .customers-section {
-        padding-top: 94px;
-        padding-bottom: 47px;
-    }
-
-    .customers-list {
-        display: flex;
-        justify-content: center;
-        column-gap: 30px;
-        }
-}
-
 .customers-section {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
 .section-customers__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: var(--title-text-color);
 
@@ -52,7 +23,8 @@
 
 .customers-list__item {
     transition: fill var(--transition-dur-and-func),
-        border-color var(--transition-dur-and-func);
+    border-color var(--transition-dur-and-func);
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 .customers-list__icon {
@@ -73,7 +45,7 @@
     justify-content: center;
     align-items: center;
 
-    width: 170px;
+    min-width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -86,4 +58,36 @@
         }
 }
 
-// ВИРІВНЯТИ ЛІШКИ ПО ЦЕНТРУ, Є ЛИШНІЙ НЕ ВІДОМИЙ МАРДЖІН??
+@media screen and (min-width: 768px) {
+    .customers-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .customers-list__item {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .customers-section {
+        padding-top: 94px;
+        padding-bottom: 47px;
+    }
+
+    .customers-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+
+    .customers-list__item{
+        flex-basis: auto;
+    }
+
+    .section-customers__title {
+        margin-bottom: 50px;
+    }
+}

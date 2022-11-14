@@ -77,9 +77,7 @@
 }
 
 .check-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     margin-bottom: 30px;
 }
 
@@ -104,7 +102,7 @@
     border-radius: 2px;
     cursor: pointer;
     padding: 1px;
-    margin-right: 9px;
+    margin-right: 8px;
 }
 
 .check__icon--vector {
@@ -118,9 +116,8 @@
 
 .check__text {
     font-size: 14px;
-    line-height: 1.7;
+    line-height: 1.16;
     letter-spacing: 0.03em;
-    margin-right: 9px;
 }
 
 .check__link {
@@ -150,4 +147,25 @@
     &:focus {
         background-color: #188CE8;
         }
+}
+
+@media screen and (min-width: 1200px) {
+    .form__title{
+        line-height: 1.5;
+    }
+
+    .check__text{
+        line-height: 1.7;
+        margin-right: 9px;
+    }
+
+    .check-label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .check-icon{
+        margin-right: 9px;
+    }
 }

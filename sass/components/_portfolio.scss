@@ -1,9 +1,10 @@
 .filters-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    max-width: 400px;
     margin-bottom: 50px;
-    column-gap: 10px;
+    gap: 8px;
 }
 
 .filters-list__button {
@@ -22,15 +23,17 @@
 }
 
 /*======================= Список проектів */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .projects-list__item:not(:last-child) {
-         margin-bottom: 30px;
-        }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px){
     .projects-list__item:not(:last-child){
         margin-bottom: 30px;
+    }
+
+    .filters-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: unset;
     }
 }
 
@@ -39,8 +42,8 @@
         padding-top: 94px;
         padding-bottom: 47px;
     }
-
 }
+
 .section-projects {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -54,6 +57,10 @@
 
 .projects-list__item{
     flex-basis: calc((100% - 90px) / 3)
+}
+
+.projects-list__item:not(:last-child) {
+    margin-bottom: 30px;
 }
 
 .project-description-wrap {

@@ -1,5 +1,11 @@
+.page-header__container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
 .header__logo--wrap {
-    color: var(--header-logo-color);
+     color: var(--header-logo-color);
 }
 
 .header__navigation {
@@ -13,41 +19,40 @@
 }
 
 .page-header {
-    border-bottom: 1px solid #ECECEC;
+     border-bottom: 1px solid #ECECEC;
 }
 
 .page-header__container {
-    display: flex;
-    align-items: center;
+     display: flex;
+     align-items: center;
 }
 
 .site-nav {
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
+     display: flex;
+     padding-top: 32px;
+     padding-bottom: 32px;
 }
 
 .site-nav .site-nav__item + .site-nav__item {
-    margin-left: 50px;
+     margin-left: 50px;
 }
 
 .site-nav__link {
-    display: block;
+     display: block;
+     color: var(--title-text-color);
 
-    color: var(--title-text-color);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     text-decoration: none;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
+     transition: color var(--transition-dur-and-func);
 
-    transition: color var(--transition-dur-and-func);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-        }
+     &:hover,
+     &:focus {
+          color: var(--accent-color);
+          }
 }
 
 .current.second::after {
@@ -55,55 +60,92 @@
 }
 
 .current {
-    color: var(--accent-color);
-    &::after {
-            content: '';
-            display: block;
-            position: relative;
-            top: 33px;
-            width: 100%;
-            height: 4px;
-            background-color: var(--accent-color);
-            border-radius: 2px;
-        }
+   color: var(--accent-color);
+      &::after {
+             content: '';
+             display: block;
+             position: relative;
+             top: 33px;
+             width: 100%;
+             height: 4px;
+             background-color: var(--accent-color);
+             border-radius: 2px;         
+         }
 }
 
-/* ===============Контакти в Хедері============ */
+  /* ===============Контакти в Хедері============ */
 .contacts-nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color var(--transition-dur-and-func);
+     margin-left: auto;
+     transition: color var(--transition-dur-and-func);
 }
+
 .contact-nav__item {
-    margin-left: 50px;
+     margin-left: 50px;
 }
 
 .contact-nav__link {
-    display: flex;
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    margin-left: auto;
+     display: flex;
+     color: var(--primary-text-color);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     margin-left: auto;
+     transition: fill var(--transition-dur-and-func);
 
-    transition: fill var(--transition-dur-and-func);
-
-    .contacts-nav &:hover,
-    .contacts-nav &:focus {
-        color: var(--accent-color);
-        }
-    
-    &:hover .contact-nav__icon {
-        fill: var(--accent-color);
-        }
+     .contacts-nav &:hover,
+     .contacts-nav &:focus {
+     color: var(--accent-color);}
+     
+     &:hover .contact-nav__icon {
+          fill: var(--accent-color);
+          }
 }
 
-.contact-nav__icon {
+.contact-nav__item:not(:last-child) {
+     margin-bottom: 10px;
+}
+
+ .contact-nav__icon {    
     align-self: center;
     margin-right: 10px;
     fill: var(--primary-text-color);
 }
+
+
+@media screen and (max-width: 767px){
+    .site-nav,
+    .contacts-nav {
+    display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .mobile-menu__btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){
+     .contacts-nav {
+     display: flex;
+     padding-top: 32px;
+     padding-bottom: 32px;
+     }
+     
+     .current::after {
+     top: 36px;
+     }
+}
+
+
+.mobile-menu__btn {
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+ 
